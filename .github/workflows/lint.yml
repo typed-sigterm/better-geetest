@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -15,6 +15,7 @@ jobs:
           bun-version-file: .tool-versions
 
       - run: bun ci
+      - run: bun run build
       - run: bun run lint --fix
       - run: bun run typecheck
 
