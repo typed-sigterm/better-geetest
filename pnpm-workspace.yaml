@@ -1,0 +1,5 @@
+# https://github.com/oven-sh/bun/issues/15601
+
+packages:
+  - packages/*
+  - playground

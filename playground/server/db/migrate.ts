@@ -1,6 +1,8 @@
-import { Database } from 'bun:sqlite';
+/* eslint-disable no-console */
+/* eslint-disable antfu/no-top-level-await */
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { Database } from 'bun:sqlite';
 
 const database = new Database('./.data/db.sqlite');
 database.run(`
@@ -20,7 +22,8 @@ for (const name of migrations) {
     .query('select 1 from "_migrations" where "name" = ?')
     .get(name);
 
-  if (applied) continue;
+  if (applied)
+    continue;
 
   const sql = await readFile(join(migrationsDirectory, name), 'utf8');
   database.transaction(() => {

@@ -1,4 +1,4 @@
-# `@better-geetest/better-auth-plugin-gt4` ![最新版本](https://img.shields.io/npm/v/%40better-geetest%2Fbetter-auth-plugin-gt4) ![许可证](https://img.shields.io/npm/l/%40better-geetest%2Fbetter-auth-plugin-gt4) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fbetter-geetest%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/better-geetest)](https://github.com/typed-sigterm/better-geetest)
+# better-auth-plugin-gt4 ![最新版本](https://img.shields.io/npm/v/%40better-geetest%2Fbetter-auth-plugin-gt4) ![许可证](https://img.shields.io/npm/l/%40better-geetest%2Fbetter-auth-plugin-gt4) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fbetter-geetest%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/better-geetest)](https://github.com/typed-sigterm/better-geetest)
 
 在 Better Auth 的认证端点前执行极验 GT4 二次校验。
 

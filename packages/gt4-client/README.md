@@ -1,4 +1,4 @@
-# `@better-geetest/gt4-client` ![最新版本](https://img.shields.io/npm/v/%40better-geetest%2Fgt4-client) ![许可证](https://img.shields.io/npm/l/%40better-geetest%2Fgt4-client) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fbetter-geetest%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/better-geetest)](https://github.com/typed-sigterm/better-geetest)
+# @better-geetest/gt4-client ![最新版本](https://img.shields.io/npm/v/%40better-geetest%2Fgt4-client) ![许可证](https://img.shields.io/npm/l/%40better-geetest%2Fgt4-client) ![OSS Lifecycle](https://img.shields.io/osslifecycle?file_url=https%3A%2F%2Fraw.githubusercontent.com%2Ftyped-sigterm%2Fbetter-geetest%2Fmain%2FOSSMETADATA) [![GitHub Stars](https://img.shields.io/github/stars/typed-sigterm/better-geetest)](https://github.com/typed-sigterm/better-geetest)
 
 社区维护的 [极验行为验证第四代](https://docs.geetest.com/gt4/overview/prodes) 的客户端 SDK。匹配官方 SDK v4.2.1。
 

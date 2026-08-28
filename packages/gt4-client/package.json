@@ -17,6 +17,10 @@
     "./original-sdk/gt4.js": "./original-sdk/gt4.js",
     "./original-sdk/bypass.js": "./original-sdk/bypass.js"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "files": [
     "dist",
     "original-sdk"

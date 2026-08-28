@@ -16,6 +16,10 @@
     "./client": "./dist/client.mjs",
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "files": [
     "dist"
   ],
