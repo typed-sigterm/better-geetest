@@ -1,0 +1,35 @@
+{
+  "name": "@better-geetest/better-auth-plugin-gt4",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Better Auth 集成极验行为验证第四代 SDK",
+  "author": "Typed SIGTERM",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typed-sigterm/better-geetest.git",
+    "directory": "packages/better-auth-plugin-gt4"
+  },
+  "keywords": ["geetest", "gt4", "captcha", "better-auth"],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./client": "./dist/client.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "better-auth": "^1.7.0"
+  },
+  "dependencies": {
+    "@better-geetest/gt4-server": "workspace:*"
+  },
+  "devDependencies": {
+    "better-auth": "^1.7.1"
+  }
+}

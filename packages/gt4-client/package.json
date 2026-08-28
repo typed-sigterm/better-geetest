@@ -1,0 +1,28 @@
+{
+  "name": "@better-geetest/gt4-client",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "社区维护的极验行为验证第四代的客户端 SDK",
+  "author": "Typed SIGTERM",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typed-sigterm/better-geetest.git",
+    "directory": "packages/gt4-client"
+  },
+  "keywords": ["geetest", "gt4", "captcha"],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json",
+    "./original-sdk/gt4.js": "./original-sdk/gt4.js",
+    "./original-sdk/bypass.js": "./original-sdk/bypass.js"
+  },
+  "files": [
+    "dist",
+    "original-sdk"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  }
+}
