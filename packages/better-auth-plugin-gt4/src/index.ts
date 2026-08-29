@@ -1,5 +1,6 @@
-import { GeetestRequestError, GeetestVerifier, type CaptchaVerification } from '@better-geetest/gt4-server';
+import type { CaptchaVerification } from '@better-geetest/gt4-server';
 import type { BetterAuthPlugin } from 'better-auth';
+import { GeetestRequestError, GeetestVerifier } from '@better-geetest/gt4-server';
 
 export const GEETEST_GT4_HEADER = 'x-geetest-gt4';
 
@@ -10,11 +11,11 @@ export const DEFAULT_PROTECTED_ENDPOINTS = [
 ] as const;
 
 export interface GeetestGt4PluginOptions {
-  captchaId: string;
-  captchaKey: string;
-  endpoints?: readonly string[];
-  headerName?: string;
-  timeout?: number;
+  captchaId: string
+  captchaKey: string
+  endpoints?: readonly string[]
+  headerName?: string
+  timeout?: number
 }
 
 export type GeetestGt4Credentials = CaptchaVerification;
@@ -33,7 +34,8 @@ function matches(pathname: string, pattern: string): boolean {
 }
 
 function isCredentials(value: unknown): value is CaptchaVerification {
-  if (typeof value !== 'object' || value === null) return false;
+  if (typeof value !== 'object' || value === null)
+    return false;
   const credentials = value as Record<string, unknown>;
   return ['captcha_output', 'gen_time', 'lot_number', 'pass_token'].every(key => typeof credentials[key] === 'string');
 }
@@ -61,7 +63,8 @@ export function geetestGt4(options: GeetestGt4PluginOptions) {
     id: 'geetest-gt4',
     onRequest: async (request, context) => {
       const path = normalizePath(new URL(request.url).pathname, context.options.basePath ?? '/api/auth');
-      if (!endpoints.some(endpoint => matches(path, endpoint))) return;
+      if (!endpoints.some(endpoint => matches(path, endpoint)))
+        return;
 
       const serializedCredentials = request.headers.get(headerName);
       if (!serializedCredentials) {

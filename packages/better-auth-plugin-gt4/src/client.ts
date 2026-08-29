@@ -1,5 +1,5 @@
 import type { BetterAuthClientPlugin } from 'better-auth/client';
-import type { GeetestGt4Credentials, geetestGt4 } from './index';
+import type { geetestGt4, GeetestGt4Credentials } from './index';
 
 /** Create the header map expected by the {@link geetestGt4} server plugin. */
 export function geetestGt4Headers(credentials: GeetestGt4Credentials): HeadersInit {

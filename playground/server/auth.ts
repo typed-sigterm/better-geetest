@@ -1,7 +1,7 @@
+import { Database } from 'bun:sqlite';
 import process from 'node:process';
 import { geetestGt4 } from '@better-geetest/better-auth-plugin-gt4';
 import { betterAuth } from 'better-auth';
-import { Database } from 'bun:sqlite';
 
 export const auth = betterAuth({
   baseURL: 'https://better-geetest.localhost',

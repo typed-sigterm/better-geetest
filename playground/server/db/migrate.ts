@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 /* eslint-disable antfu/no-top-level-await */
+import { Database } from 'bun:sqlite';
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Database } from 'bun:sqlite';
 
 const database = new Database('./.data/db.sqlite');
 database.run(`

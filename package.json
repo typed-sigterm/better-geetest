@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "tsdown -Ww",
     "play": "bun run --cwd playground dev",
-    "build": "tsdown -W",
+    "build": "bun run --filter '*' build",
     "lint": "eslint .",
     "typecheck": "bun run --filter '*' typecheck"
   },
