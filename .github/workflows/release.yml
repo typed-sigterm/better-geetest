@@ -18,6 +18,10 @@ jobs:
           bun-version-file: .tool-versions
 
       - run: bun ci
-      - run: bun run build
-      # https://github.com/oven-sh/bun/issues/15601
-      - run: bunx pnpm@latest -r publish
+      - run: |
+          PKG_NAME=$(echo "$TAG" | sed 's/_v.*//')
+          cd packages/$PKG_NAME
+          bun run build
+          pnpm publish
+        env:
+          TAG: ${{ github.ref_name }}
